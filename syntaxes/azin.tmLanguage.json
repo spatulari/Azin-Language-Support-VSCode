@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Azin",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#functions"
+		},
+		{
+			"include": "#modules"
+		},
+		{
+			"include": "#atOperator"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.azin",
+				"match": "\\b(if|while|for|return)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.azin",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.azin",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": 
+		{
+			"patterns": 
+			[
+				{
+				"name": "constant.numeric.azin",
+				"match": "\\b\\d+\\b"
+				}
+			]
+		},
+
+		"functions": 
+		{
+			"patterns": 
+			[
+				{
+					"name": "entity.name.function.azin",
+					"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=@)"
+				}
+			]
+		},
+
+		"modules": 
+		{
+			"patterns": 
+			[
+				{
+					"name": "entity.name.namespace.azin",
+					"match": "(?<=@)[a-zA-Z_][a-zA-Z0-9_]*"
+				}
+			]
+		},
+		"atOperator": 
+		{
+			"patterns": 
+			[
+				{
+					"name": "support.type.azin",
+					"match": "@"
+				}
+			]
+		}
+	},
+	"scopeName": "source.azin"
+}

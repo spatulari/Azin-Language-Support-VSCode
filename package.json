@@ -10,16 +10,20 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "az",
-      "aliases": ["Azin", "az"],
-      "extensions": [".az"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "az",
-      "scopeName": "source.azin",
-      "path": "./syntaxes/az.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "azin",
+        "aliases": ["Azin"],
+        "extensions": [".az"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "azin",
+        "scopeName": "source.azin",
+        "path": "./syntaxes/azin.tmLanguage.json"
+      }
+    ]
   }
 }
