@@ -1,0 +1,25 @@
+{
+  "name": "azin-language-support",
+  "displayName": "Azin language support",
+  "description": "This is an extension that adds syntax highlighting and icons for my own made language \"Azin\"",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "az",
+      "aliases": ["Azin", "az"],
+      "extensions": [".az"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "az",
+      "scopeName": "source.azin",
+      "path": "./syntaxes/az.tmLanguage.json"
+    }]
+  }
+}
