@@ -29,6 +29,6 @@ configuration for the **Azin** programming language.
 out@io("Hello World");
 return 5;
 ```
-#Important
+## Important
 
 The language is not even close to done, I just made this for my own visual ease when debgging, the language is at no state of a serious programming language yet.
