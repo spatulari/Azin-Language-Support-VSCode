@@ -10,7 +10,8 @@
     { "include": "#numbers" },
     { "include": "#functions" },
     { "include": "#modules" },
-    { "include": "#atOperator" }
+    { "include": "#atOperator" },
+    { "include": "#constants" }
   ],
   "repository": 
   {
@@ -103,6 +104,17 @@
           "match": "//.*$"
         }
       ]
+    },
+    "constants": 
+    {
+      "patterns": 
+      [
+        {
+          "name": "constant.language.boolean.azin",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
     }
+
   }
 }
