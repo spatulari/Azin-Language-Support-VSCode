@@ -1,0 +1,37 @@
+{
+  "return": {
+    "prefix": "return",
+    "body": [
+      "return $0"
+    ],
+    "description": "Return statement"
+  },
+  "int": {
+    "prefix": "int",
+    "body": [
+      "int $0"
+    ],
+    "description": "Integer type"
+  },
+  "char": {
+    "prefix": "char",
+    "body": [
+      "char $0"
+    ],
+    "description": "Character type"
+  },
+  "bool": {
+    "prefix": "bool",
+    "body": [
+      "bool $0"
+    ],
+    "description": "Boolean type"
+  },
+  "nore": {
+    "prefix": "nore",
+    "body": [
+      "nore $0"
+    ],
+    "description": "Nore keyword"
+  }
+}

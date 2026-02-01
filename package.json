@@ -3,7 +3,7 @@
   "displayName": "Azin language support",
   "description": "Syntax highlighting for the Azin programming language",
   "publisher": "Alex12-Git200",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "icon": "azin.png",
 
   "repository": {
@@ -29,6 +29,12 @@
         "language": "azin",
         "scopeName": "source.azin",
         "path": "./syntaxes/azin.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "azin",
+        "path": "./snippets/azin.json"
       }
     ]
   }
