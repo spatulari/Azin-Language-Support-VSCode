@@ -24,7 +24,7 @@
       [
         {
           "name": "keyword.control.azin",
-          "match": "\\b(if|while|for|return)\\b"
+          "match": "\\b(if|else|while|for|return)\\b"
         }
       ]
     },
@@ -83,6 +83,10 @@
         {
           "name": "entity.name.function.azin",
           "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=@)"
+        },
+        {
+          "name": "entity.name.function.azin",
+          "match": "(?<!@)\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\()"
         }
       ]
     },
@@ -119,35 +123,6 @@
         }
       ]
     },
-
-    "angleBlocks": 
-    {
-      "patterns": 
-      [
-        {
-          "name": "entity.name.type.angle.azin",
-          "begin": "<",
-          "end": ">",
-          "beginCaptures": 
-          {
-            "0": { "name": "entity.name.type.angle.azin" }
-          },
-          "endCaptures": 
-          {
-            "0": { "name": "entity.name.type.angle.azin" }
-          },
-          "patterns": 
-          [
-            {
-              "name": "entity.name.type.angle.azin",
-              "match": "[^<>]+"
-            }
-          ]
-        }
-      ]
-    },
-
-
 
     "comments": 
     {
